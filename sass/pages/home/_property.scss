@@ -1,0 +1,82 @@
+@use "../../utilities/variables" as *;
+@use "../../utilities/mixins" as *;
+section {
+  padding: 20px;
+  background-color: #f9f9f9;
+
+  .property {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+
+    h4 {
+      font-size: 24px;
+      color: orange;
+      margin-bottom: 10px;
+      span {
+        font-weight: 600;
+      }
+    }
+
+    h1 {
+      font-size: 36px;
+      margin-bottom: 30px;
+
+      span {
+        font-weight: bold;
+        color: orange; // highlight color for "Our support Team"
+      }
+    }
+
+    .email {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+
+      div {
+        flex: 1 1 300px;
+        max-width: 350px;
+        margin: 20px;
+        padding: 20px;
+        background-color: #F4F7FB;
+        
+        border-radius: 10px;
+        
+
+        img {
+          margin-bottom: 10px;
+        }
+
+        h2 {
+          font-size: 20px;
+          color: #000;
+          margin-bottom: 10px;
+        }
+
+        p {
+          font-size: 16px;
+          color: #666;
+        }
+
+        i {
+          margin-left: 5px;
+          color: #000;
+        }
+      }
+    }
+  }
+}
+
+// Responsive styling for smaller screens
+@media (max-width: 768px) {
+  section {
+    .property {
+      .email {
+        flex-direction: column;
+        div {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,8 @@
+@use "../../utilities/variables" as *;
+@use "../../utilities/mixins" as *;
+section{
+  @include flex(space-between,center)
+.w{
+  background-color:#F4F7FB;
+}
+}

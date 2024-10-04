@@ -1,0 +1,102 @@
+@use "../../utilities/variables" as *;
+@use "../../utilities/mixins" as *;
+
+.hero{
+    @include flex (space-between, center);
+    font-family: "kanit",sans-serif;
+    .hero-section{
+        padding-left: 50px;
+    }
+  }
+  .hero{
+    display:flex
+  }
+  #h{
+    color:$primary-color
+  }
+  div p{
+    font-weight: 400
+  }
+  .easy{
+    padding-top:30px ;
+  }
+  .h1{
+    padding-bottom: 10px;
+    padding-top: 20px;
+    font-size: 50px;
+  }
+  .paragraph{
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  #input{
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding: 10px;
+    margin-top: 20px;
+    border:#fff
+  }
+  .btn-search{
+    background-color: $black;
+    color:#fff;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 10px;
+    margin-top: 5px;
+    font-weight: 300px;
+    &:hover{
+      background-color: $primary-color;
+  }
+  }
+  .tools-section{
+    @include flex ( center,center);
+    gap:30px;
+    width: 800px;
+    // height: 30vh;
+    margin-top: 50px;
+    margin-left: 20px;
+    // background-color: $light-grey;
+  }
+.tools{
+    background-color: $black;
+    border-radius: 50%;
+    // border:2px solid #fff;
+    gap:5px;
+    margin-left: 90px;
+border:8px solid $black
+}
+.tool1{
+    border:2px solid #fff;
+    background-color: $light-grey;
+    border-radius: 5px;
+    margin: 20px;
+}
+.hero-pizza{
+    margin-right:200px;
+    padding-top: 30px;
+}
+.part{
+    padding-left: 40px;
+}
+.image{
+    // width:50px;
+    // height: 50px;
+    @include flex ( center,center);
+    border-radius: 50%;
+    border:6px solid $black;
+    margin:30px;
+}
+.hero-pizza{
+    @include flex ( center,center,column);
+}
+//    media queries
+@media screen and (max-width: 600px) {
+  .hero-pizza{ display: none;}
+}
+
+
+
+
+
+
+

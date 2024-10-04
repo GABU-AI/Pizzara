@@ -1,0 +1,39 @@
+@use "../../utilities/variables" as *;
+@use "../../utilities/mixins" as *;
+section {
+  .main {
+    #over {
+      color: $primary-color;
+    }
+    ul {
+      @include flex(flex-start, center);
+     
+      li {
+        align-items: flex-end;
+        a {
+         
+          text-transform: capitalize;
+          display: inline-block;
+          border-bottom: solid gray;
+          
+          &:hover {
+            background-color: $primary-color;
+            color: white;
+          }
+        }
+      }
+    }
+    .BBQ {
+      @include flex(space-between, center);
+      button {
+        background-color: black;
+        color: white;
+      }
+    }
+    button {
+      background-color: $primary-color;
+      color: white;
+      @include flex(space-between,center);
+    }
+  }
+}
